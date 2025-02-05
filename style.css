@@ -1,0 +1,37 @@
+.calci{
+    height: 500px;
+    width: 400px;
+    margin-left: 550px;
+    margin-top: 30px;
+    border-style:groove;
+    border-color:rgb(112, 10, 88) ;
+    border-width: 5px;
+    background-color: palevioletred;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border-style:groove;
+    border-color:rgb(112, 10, 88) ;
+    border-width: 5px;
+    height: 65px;
+    width: 65px;
+    background-color: plum;
+    display:  inline-block;
+    margin-top:20px ;
+    margin-left:13px ;
+    padding: 20px;
+}
+.buttons{
+   display:  inline-block; 
+    padding: 30px;
+
+}
+button:hover{
+    background-color: purple;
+    cursor: pointer;
+}

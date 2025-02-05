@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="C:\Users\Lavaniya\Desktop\calc\calci\calciimg2.png">
+    <link rel="stylesheet" href="C:\Users\Lavaniya\Desktop\calc\calci\style.css">
+</head>
+<body style="background-color:rgb(239, 183, 201);">
+<div style="padding-top: 30px;">
+    <h1 style="display: inline;margin-left: 600px;"><u style="color: rgba(170, 29, 112, 0.796);">CALCULATOR</u>🧮</h1>
+    <h4 style="color: rgb(111, 20, 111);margin-left: 550px;margin-top: 20px;">It can perform basic Arithmetic Operations..✖️➗➕➖🟰 </h4>
+</div>
+
+  <div class="calci">
+        
+            <input style="width:350px;height:50px;margin-left:23px;margin-top: 10px;border: 3px;border-style: ridge;border-color: brown;" type="text" id="result" readonly>
+    <div class="buttons">      
+       <button onclick="clearResult()"><h1>🧹</h1></button>
+       <button onclick="appendToResult('1')"><h1>🎲</h1></button>
+       <button onclick="appendToResult('2')"><h1>✌</h1></button>
+       <button onclick="appendToResult('3')"><h1>꒱</h1></button>
+       <button onclick="appendToResult('+')"><h1>➕</h1></button>
+       <button onclick="appendToResult('4')"><h1>🕓</h1></button>
+       <button onclick="appendToResult('5')"><h1>🖐🏻</h1></button>
+       <button onclick="appendToResult('6')"><h1>🌀</h1></button>
+       <button onclick="appendToResult('-')"><h1>➖</h1></button>
+       <button onclick="appendToResult('7')"><h1>7</h1></button>
+       <button onclick="appendToResult('8')"><h1>🎱</h1></button>
+       <button onclick="appendToResult('9')"><h1>9️⃣</h1></button>
+       <button onclick="appendToResult('*')"><h1>✖️</h1></button>
+       <button onclick="appendToResult('0')"><h1>🟡</h1></button>
+       <button onclick="appendToResult('/')"><h1>➗</h1></button>
+       <button onclick="calculateResult()"><h1>➜</h1></button>
+    </div>
+ </div>
+
+    <script>
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+
+        function appendToResult(value) {
+            document.getElementById('result').value += value;
+        }
+
+        function calculateResult() {
+            try {
+                document.getElementById('result').value = eval(document.getElementById('result').value);
+            } catch (error) {
+                document.getElementById('result').value = 'Error';
+            }
+        }
+    </script>
+
+</body>
+</html>
